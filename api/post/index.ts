@@ -1,5 +1,13 @@
-import { DataType as NodeDataType } from '@/client/src/data-binding/Model/PostGraph/Node';
-import { DataType as EdgeDataType } from '@/client/src/data-binding/Model/PostGraph/Edge';
+export type NodeDataType = {
+  id: number;
+  title: string;
+};
+
+export type EdgeDataType = {
+  id: number;
+  fromId: number;
+  toId: number;
+};
 
 export type GetAllNodeSummary = {
   ret: NodeDataType[];
