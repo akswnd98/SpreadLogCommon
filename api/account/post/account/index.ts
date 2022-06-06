@@ -28,3 +28,13 @@ export interface DeleteEdgeRequest {
 export interface DeleteNodeRequest {
   id: number;
 }
+
+export interface PublishPostRequest {
+  id: number;
+  title: string;
+  body: string;
+}
+
+export interface PublishPostResponse {
+  
+}

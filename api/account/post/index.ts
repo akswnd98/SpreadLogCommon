@@ -1,3 +1,5 @@
+import { NamedTupleMember, NumberLiteralType } from "typescript";
+
 export interface GetAllPostNodesRequest {
   nickname: string;
 }
@@ -22,4 +24,17 @@ export interface GetAllPostEdgesResponse {
     fromId: number;
     toId: number;
   }[],
+}
+
+export interface GetPostRequest {
+  id: number;
+}
+
+export interface GetPostResponse {
+  id: number;
+  accountId: number;
+  title: string;
+  body: string;
+  firstUpload: string;
+  lastUpdate: string;
 }
