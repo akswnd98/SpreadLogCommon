@@ -38,3 +38,14 @@ export interface GetPostResponse {
   firstUpload: string;
   lastUpdate: string;
 }
+
+export interface GetAllPrevPostMetadatasRequest {
+  id: number;
+}
+
+export interface GetAllPrevPostMetadatasResponse {
+  list: {
+    id: number;
+    title: string;
+  }[];
+}
